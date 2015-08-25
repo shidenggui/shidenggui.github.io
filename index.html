@@ -81,6 +81,76 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/php/install-LAMP-on-Linux-Mint-17-2/" title="在Linux Mint17.2上安装LAMP" itemprop="url">在Linux Mint17.2上安装LAMP</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="shidenggui" target="_blank" itemprop="author">shidenggui</a>
+		
+  <p class="article-time">
+    <time datetime="2015-08-25T11:02:53.000Z" itemprop="datePublished"> 發表於 2015-08-25</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h3 id="更新系统">更新系统</h3><p><code>sudo apt-get update</code></p>
+<h3 id="安装apache2">安装apache2</h3><p><code>sudo apt-get install apache2</code></p>
+<h3 id="安装mysql">安装mysql</h3><p><code>sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql</code></p>
+<p>激活mysql<br><code>sudo mysql_install_db</code></p>
+<p><strong>可选:</strong>运行安全脚本(进行安全设置）<br><code>sudo /usr/bin/mysql_secure_installation</code></p>
+<h3 id="安装php">安装php</h3><p><code>sudo apt-get install  php5 libapache2-mod-php5</code></p>
+<h3 id="安装php相关模块">安装php相关模块</h3><p>查看所有可用模块<br><code>sudo apt-cache search php5-</code></p>
+<p>安装指定模块<br><code>sudo apt-get install php5-模块名</code></p>
+<h3 id="检验成果">检验成果</h3><p><code>sudo vim /var/www/html/index.php</code><br>写入：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line">phpinfo();</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>重启apache2使改动生效<br><code>sudo /etc/init.d/apache2 restart</code> 或 <code>sudo service apache2 restart</code><br>访问<code>localhost</code>查看效果</p>
+<p>参考：<a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu" target="_blank" rel="external">https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/php/">php</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/linux/">linux</a><a href="/tags/php/">php</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/other#uncategorized/hello-world/" title="Hello World" itemprop="url">Hello World</a>
   </h1>
   <p class="article-author">By
@@ -142,8 +212,34 @@
 <aside class="clearfix">
 
   
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/php/" title="php">php<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
 
   
+<div class="tagslist">
+	<p class="asidetitle">標簽</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/linux/" title="linux">linux<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/php/" title="php">php<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
 
   <div class="linkslist">
   <p class="asidetitle">友情鏈接</p>
