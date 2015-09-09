@@ -4,22 +4,29 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Shidenggui&#39;s Blog</title>
+    <title>读《Javascript DOM编程艺术》的笔记 | Shidenggui&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="shidenggui">
     
 
     
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Shidenggui's Blog">
-<meta property="og:url" content="shidenggui.me/index.html">
+    <meta name="description" content="读《JavaScriptDOM编程艺术》的笔记异常捕获try{    //error code}catch (err) {    alert(err)}
+throw创建自定义错误
+数组var arr = Array();var arr = [];关联数组var len = Array();len[‘name’] = ‘John’;len[‘year’] = 1940;实际创建的是Array对象的属">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读《Javascript DOM编程艺术》的笔记">
+<meta property="og:url" content="shidenggui.me/Javascript/JavsScript-DOM-Note/index.html">
 <meta property="og:site_name" content="Shidenggui's Blog">
-<meta property="og:description">
+<meta property="og:description" content="读《JavaScriptDOM编程艺术》的笔记异常捕获try{    //error code}catch (err) {    alert(err)}
+throw创建自定义错误
+数组var arr = Array();var arr = [];关联数组var len = Array();len[‘name’] = ‘John’;len[‘year’] = 1940;实际创建的是Array对象的属">
+<meta property="og:updated_time" content="2015-09-09T07:34:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Shidenggui's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="读《Javascript DOM编程艺术》的笔记">
+<meta name="twitter:description" content="读《JavaScriptDOM编程艺术》的笔记异常捕获try{    //error code}catch (err) {    alert(err)}
+throw创建自定义错误
+数组var arr = Array();var arr = [];关联数组var len = Array();len[‘name’] = ‘John’;len[‘year’] = 1940;实际创建的是Array对象的属">
 
     
     <link rel="alternative" href="/atom.xml" title="Shidenggui&#39;s Blog" type="application/atom+xml">
@@ -73,12 +80,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/Javascript/JavsScript-DOM-Note/" title="读《Javascript DOM编程艺术》的笔记" itemprop="url">读《Javascript DOM编程艺术》的笔记</a>
@@ -92,9 +97,16 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <h2 id="读《JavaScriptDOM编程艺术》的笔记">读《JavaScriptDOM编程艺术》的笔记</h2><p>异常捕获<br>try{<br>    //error code<br>}catch (err) {<br>    alert(err)<br>}</p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目錄</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#读《JavaScriptDOM编程艺术》的笔记"><span class="toc-number">1.</span> <span class="toc-text">读《JavaScriptDOM编程艺术》的笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域"><span class="toc-number">1.1.</span> <span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用new创建新对象"><span class="toc-number">1.2.</span> <span class="toc-text">使用new创建新对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#宿主对象"><span class="toc-number">1.3.</span> <span class="toc-text">宿主对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#节点"><span class="toc-number">1.4.</span> <span class="toc-text">节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取元素"><span class="toc-number">1.5.</span> <span class="toc-text">获取元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获得和设置属性"><span class="toc-number">2.</span> <span class="toc-text">获得和设置属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#getAttribute"><span class="toc-number">2.1.</span> <span class="toc-text">getAttribute</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#setAttribute"><span class="toc-number">2.2.</span> <span class="toc-text">setAttribute</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非_DOM_解决方案(不推荐)"><span class="toc-number">2.3.</span> <span class="toc-text">非 DOM 解决方案(不推荐)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM_工作模式"><span class="toc-number">2.4.</span> <span class="toc-text">DOM 工作模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件处理函数"><span class="toc-number">2.5.</span> <span class="toc-text">事件处理函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#childNodes_属性"><span class="toc-number">2.6.</span> <span class="toc-text">childNodes 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nodeType_属性"><span class="toc-number">2.7.</span> <span class="toc-text">nodeType 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nodeValue"><span class="toc-number">2.8.</span> <span class="toc-text">nodeValue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#firstChild/lastChild"><span class="toc-number">2.9.</span> <span class="toc-text">firstChild/lastChild</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#window-onload"><span class="toc-number">2.10.</span> <span class="toc-text">window.onload</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#window-open"><span class="toc-number">2.11.</span> <span class="toc-text">window.open</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#this"><span class="toc-number">2.12.</span> <span class="toc-text">this</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分离JS"><span class="toc-number">2.13.</span> <span class="toc-text">分离JS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象检测"><span class="toc-number">2.14.</span> <span class="toc-text">对象检测</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#onload_绑定多个函数"><span class="toc-number">2.14.1.</span> <span class="toc-text">onload 绑定多个函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML_DOM"><span class="toc-number">2.15.</span> <span class="toc-text">HTML DOM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#createElement"><span class="toc-number">2.16.</span> <span class="toc-text">createElement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#appendChild"><span class="toc-number">2.17.</span> <span class="toc-text">appendChild</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#createTextNode"><span class="toc-number">2.18.</span> <span class="toc-text">createTextNode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在已有元素前插入一个新元素"><span class="toc-number">2.19.</span> <span class="toc-text">在已有元素前插入一个新元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ajax"><span class="toc-number">2.20.</span> <span class="toc-text">Ajax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XMLHttpRequest_对象"><span class="toc-number">2.21.</span> <span class="toc-text">XMLHttpRequest 对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#open()_方法"><span class="toc-number">2.22.</span> <span class="toc-text">open() 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#responseText_/_responseXML_属性"><span class="toc-number">2.23.</span> <span class="toc-text">responseText / responseXML 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#onreadystatechange_事件处理函数"><span class="toc-number">2.24.</span> <span class="toc-text">onreadystatechange 事件处理函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#readyState_属性"><span class="toc-number">2.25.</span> <span class="toc-text">readyState 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#abbr"><span class="toc-number">2.26.</span> <span class="toc-text">abbr</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS_DOM"><span class="toc-number">3.</span> <span class="toc-text">CSS DOM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#style_属性"><span class="toc-number">3.1.</span> <span class="toc-text">style 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#className_属性"><span class="toc-number">3.2.</span> <span class="toc-text">className 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#setTimeout"><span class="toc-number">3.3.</span> <span class="toc-text">setTimeout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#parseInt_/_parseFloat_函数"><span class="toc-number">3.4.</span> <span class="toc-text">parseInt / parseFloat 函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS_overflow"><span class="toc-number">3.5.</span> <span class="toc-text">CSS overflow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#onmouseover_方法"><span class="toc-number">3.6.</span> <span class="toc-text">onmouseover 方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery"><span class="toc-number">4.</span> <span class="toc-text">jQuery</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#each"><span class="toc-number">4.1.</span> <span class="toc-text">each</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#$_专有选择器"><span class="toc-number">4.2.</span> <span class="toc-text">$ 专有选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改元素"><span class="toc-number">4.3.</span> <span class="toc-text">修改元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表单元素选择器"><span class="toc-number">4.4.</span> <span class="toc-text">表单元素选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义选择器过滤器"><span class="toc-number">4.5.</span> <span class="toc-text">自定义选择器过滤器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成内容"><span class="toc-number">4.6.</span> <span class="toc-text">生成内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#操作内容"><span class="toc-number">4.7.</span> <span class="toc-text">操作内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#document-ready"><span class="toc-number">4.8.</span> <span class="toc-text">document.ready</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他事件"><span class="toc-number">4.9.</span> <span class="toc-text">其他事件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery_and_Ajax"><span class="toc-number">4.10.</span> <span class="toc-text">jQuery and Ajax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#$(exp)-load()"><span class="toc-number">4.11.</span> <span class="toc-text">$(exp).load()</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<h2 id="读《JavaScriptDOM编程艺术》的笔记">读《JavaScriptDOM编程艺术》的笔记</h2><p>异常捕获<br>try{<br>    //error code<br>}catch (err) {<br>    alert(err)<br>}</p>
 <p><strong>throw</strong><br>创建自定义错误</p>
 <p><strong>数组</strong><br>var arr = Array();<br>var arr = [];<br><strong>关联数组</strong><br>var len = Array();<br>len[‘name’] = ‘John’;<br>len[‘year’] = 1940;<br>实际创建的是Array对象的属性，更好的办法是使用下面通用的对象。</p>
 <p>使用 arr.length 来获取数组的长度<br><strong>对象</strong><br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="built_in">len</span> = Object();</span><br><span class="line"><span class="built_in">len</span>.name = <span class="string">'John'</span>;</span><br><span class="line"><span class="built_in">len</span>.year = <span class="number">1940</span>;</span><br></pre></td></tr></table></figure></p>
@@ -334,14 +346,9 @@
 <p>getJSON / getScript 方法的回调函数参数为JS对象</p>
 <p><strong>params</strong><br>为{ key: ‘value’ } 对象</p>
 <h3 id="$(exp)-load()">$(exp).load()</h3><p>把url的返回的东西加载到响应的exp(DOM)结构中<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#ajax-update'</span>).load(<span class="string">'something.php'</span>, &#123;key: <span class="string">'value'</span>&#125;, <span class="function"><span class="keyword">function</span> (<span class="params">responseText, status</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//update success</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
@@ -359,421 +366,43 @@
 
 
 
-
-<div class="comments-count">
+	<div class="article-share" id="share">
 	
-</div>
+	  <div data-url="shidenggui.me/Javascript/JavsScript-DOM-Note/" data-title="读《Javascript DOM编程艺术》的笔记 | Shidenggui&#39;s Blog" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/HTML5/HTML-Note/" title="HTML5 笔记" itemprop="url">HTML5 笔记</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="shidenggui" target="_blank" itemprop="author">shidenggui</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-29T03:41:53.000Z" itemprop="datePublished"> 發表於 2015-08-29</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="1、HTML是标记语言">1、HTML是标记语言</h3><h3 id="2、常见问题解决">2、常见问题解决</h3><ul>
-<li>找到问题根源</li>
-<li>官方文档</li>
-<li>搜索引擎</li>
-</ul>
-<h3 id="基础标签">基础标签</h3><p>&lt;!DOCTYPE html&gt;<br>head</p>
-<ul>
-<li>meta charset 编码格式，默认utf-8</li>
-<li>title 标题</li>
-</ul>
-<p>body 内容</p>
-<ul>
-<li>h1-h5 标题</li>
-<li>p 段落(换行)</li>
-<li>a href 超链接</li>
-<li>img src 图片</li>
-</ul>
-<h3 id="元素、属性、格式化">元素、属性、格式化</h3><ul>
-<li>p br 行距不同，p较宽</li>
-<li>属性以键/值对的形式出现</li>
-</ul>
-<h3 id="常用标签属性">常用标签属性</h3><ul>
-<li>a: target规定何处打开链接(“_blank”新页面打开</li>
-<li>h1: align对其方式</li>
-<li>body:bgcolor背景颜色background背景图片</li>
-</ul>
-<h3 id="通用属性">通用属性</h3><ul>
-<li>class:规定元素的类名</li>
-<li>id:规定元素的唯一ID</li>
-<li>style:规定元素的样式</li>
-<li>tilte:规定元素的额外信息</li>
-</ul>
-<h3 id="HTML格式化">HTML格式化</h3><ul>
-<li>b:blod 粗体文本</li>
-<li>big: 大号字</li>
-<li>small: 小号字</li>
-<li>em:着重文章</li>
-<li>i:italic 斜体</li>
-<li>strong:加重语气</li>
-<li><code>sub</code>:下标字</li>
-<li><code>sup</code>:上标字</li>
-<li><code>ins</code>:插入字</li>
-<li><code>del</code>:删除字</li>
-</ul>
-<h3 id="HTML样式">HTML样式</h3><ol>
-<li>标签<ul>
-<li>style:样式定义</li>
-<li>link:资源引用</li>
-</ul>
-</li>
-<li>属性:<ul>
-<li>rel=”stylesheet”:外部样式表</li>
-<li>type=”text/css”:引入文档的类型</li>
-<li>margin-left:边距</li>
-</ul>
-</li>
-</ol>
-<p>样式表插入方法:</p>
-<ol>
-<li>外部样式表:<br><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;</code></li>
-<li>内部样式表<br><code>&lt;style type=&quot;text/css&quot;&gt;
-p {margin-left:20px}
-&lt;/style&gt;</code></li>
-<li>内联样式表<br><code>&lt;p style=&quot;color: red&quot;&gt;</code></li>
-</ol>
-<h3 id="HTML_图片、链接、表格">HTML 图片、链接、表格</h3><ol>
-<li>img:<ul>
-<li>alt:无图片时显示文字</li>
-</ul>
-</li>
-<li>a:<ul>
-<li>name:#xxx跳转到xxx</li>
-</ul>
-</li>
-<li>表格:<ul>
-<li>table:定义表格<ul>
-<li>cellpadding:单元格边距(单元格字体跟单元格边框)</li>
-<li>cellspacing:单元格间距(单元格之间)</li>
-<li>bgcolor:背景颜色</li>
-<li>background:背景图片</li>
-</ul>
-</li>
-<li>caption:表头</li>
-<li>tr:表行</li>
-<li>td:表单元</li>
-<li>th:表头</li>
-</ul>
-</li>
-</ol>
-<h3 id="HTML列表">HTML列表</h3><ul>
-<li>ol:有序列表</li>
-<li>ul:无序列表</li>
-<li><p>li:列表项</p>
-</li>
-<li><p>ol:type:</p>
-<ul>
-<li>disc:实体圆</li>
-<li>cicle:空心圆</li>
-<li>square:方块实体</li>
-</ul>
-</li>
-<li>ul:<ul>
-<li>type: A,a,I,i标号方式</li>
-<li>start:定义从哪里开始</li>
-</ul>
-</li>
-</ul>
-<p>自定义列表<br>dl dt dd</p>
-<h3 id="HTML块">HTML块</h3><ol>
-<li>块元素<ul>
-<li>新行开始:h1 p ul …</li>
-</ul>
-</li>
-<li>内联元素<ul>
-<li>不以新行开始:b a img</li>
-</ul>
-</li>
-<li>HTML<code>&lt;div&gt;</code>元素<ul>
-<li>也称为块元素，组合HTML内容</li>
-</ul>
-</li>
-<li>HTML<code>&lt;span&gt;</code>元素<ul>
-<li>内联元素，可作为文本容器</li>
-</ul>
-</li>
-</ol>
-<h3 id="HTML布局">HTML布局</h3><ol>
-<li>使用<code>&lt;div&gt;</code>布局</li>
-<li>使用<code>table</code>布局</li>
-</ol>
-<p>div的float:<br>详细参见下面这篇文章<br><a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">css浮动详解</a></p>
-<p>table布局:colspan合并单元格的数量</p>
-<h3 id="表单">表单</h3><h4 id="常用表单标签">常用表单标签</h4><ul>
-<li><code>&lt;form&gt;</code> 表单</li>
-<li><code>&lt;input&gt;</code> 输入域</li>
-<li><code>&lt;textarea&gt;</code> 文本域</li>
-<li><code>&lt;lable&gt;</code> 控制标签</li>
-<li><code>&lt;fieldset&gt;</code> 定义域</li>
-<li><code>&lt;legend&gt;</code> 域的标题</li>
-<li><code>&lt;select&gt;</code> 选择列表</li>
-<li><code>&lt;optgroup&gt;</code> 选项组</li>
-<li><code>&lt;option&gt;</code> 下拉列表中的选项</li>
-<li><code>&lt;button&gt;</code> 按钮<br>例子: <code>&lt;input type=&quot;text&quot;&gt;</code></li>
-</ul>
-<p><strong>input 的 type 属性</strong></p>
-<ul>
-<li>text: 文本</li>
-<li>password: 密码</li>
-<li>checkbox: 复选框</li>
-<li>radio: 单选,需要添加name属性指定组</li>
-</ul>
-<p><strong>select:下拉框</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">请选择您的常住地址？</span><br><span class="line"><span class="tag">&lt;<span class="title">select</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">option</span>&gt;</span>上海<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">option</span>&gt;</span>浙江<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">option</span>&gt;</span>北京<span class="tag">&lt;/<span class="title">option</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">select</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>textarea</strong></p>
-<ul>
-<li>cols:列</li>
-<li>rows:行</li>
-</ul>
-<p><strong>button</strong></p>
-<p>普通按钮<br><code>&lt;input type=&quot;button&quot; value=&quot;按钮&quot;&gt;</code></p>
-<input type="button" value="按钮">
-
-<p>提交按钮<br><code>&lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;</code></p>
-<input type="submit" value="提交">
-
-<h3 id="HTML框架">HTML框架</h3><ol>
-<li><p>frameset frame(已过时)</p>
-<ul>
-<li>不能加在body标签中</li>
-<li>cols=”x%,x%” 按照x竖向向摆放frame</li>
-<li>rows=”x%,x%” 按照x横向摆放</li>
-</ul>
-</li>
-<li><p>iframe</p>
-<ul>
-<li>frameborder 设置边框</li>
-<li>可以嵌套，a标签的<code>_parent</code>父框架打开，<code>_top</code>主页面打开</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>backgroud 背景图片</li>
-<li>bgcolor 背景颜色 <ul>
-<li>red <code>#FF0000</code></li>
-<li>green <code>#00FF00</code></li>
-<li>blue <code>#0000FF</code></li>
-<li>RGB{x,y,z}</li>
-</ul>
-</li>
-</ul>
-<p><a href="http://www.w3school.com.cn/tags/html_ref_entities.html" target="_blank" rel="external">HTML实体</a></p>
-<h3 id="Web_Storage">Web Storage</h3><ol>
-<li>seesionStorage:在进入网站到浏览器过程中保存的数据</li>
-<li>localStorage:保存在本地硬件中，关闭浏览器依旧存在</li>
-</ol>
-<h3 id="相关操作">相关操作</h3><ol>
-<li>setItem(key, value)</li>
-<li>getItem(key)</li>
-</ol>
-<p>可以存储JSON格式的对象<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//save</span></span><br><span class="line"><span class="keyword">var</span> data = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">data.name = <span class="string">'jack'</span>;</span><br><span class="line">data.memo = <span class="string">'student'</span>;</span><br><span class="line"><span class="keyword">var</span> str = <span class="built_in">JSON</span>.stringify(data);</span><br><span class="line">localStorage.setItem(data.name, str);</span><br><span class="line"><span class="comment">//load</span></span><br><span class="line"><span class="keyword">var</span> str = localStorage.getItem</span><br><span class="line"><span class="keyword">var</span> data = <span class="built_in">JSON</span>.parse(data.name);</span><br></pre></td></tr></table></figure></p>
-<h3 id="HTML5本地数据库">HTML5本地数据库</h3><ol>
-<li>创建数据库对象<br><code>var db = openDatabase(&#39;mydb&#39;, &#39;1.0&#39;, &#39;test db&#39;, 1024 * 100)</code></li>
-<li><p>使用事务</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">db.transaction(<span class="function"><span class="keyword">function</span>(<span class="params">tx</span>)</span>&#123;</span><br><span class="line">    tx.executeSql(<span class="string">''</span>);</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>用executeSql执行查询</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">transaction.executeSql(sqlquery, [], dataHandler, errorHandler);</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dataHandler</span>(<span class="params">transaction, result</span>);</span><br><span class="line"><span class="title">function</span> <span class="title">errorHandler</span>(<span class="params">transaction, errmsg</span>);</span><br><span class="line"><span class="title">rows</span>.<span class="title">length</span> 获取记录的条数</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">js常用的函数</span><br><span class="line">createElement</span><br><span class="line">appendChild</span><br><span class="line">innerHTML</span><br><span class="line">getElementById</span><br></pre></td></tr></table></figure>
-<h3 id="indexedDB数据库">indexedDB数据库</h3><p><strong>local NoSql DB</strong></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/HTML5/">HTML5</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/HTML5/">HTML5</a><a href="/tags/Web/">Web</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/HTML5/HTML-Note/"  title="HTML5 笔记">
+ <strong>下一篇：</strong><br/> 
+ <span>HTML5 笔记
+</span>
+</a>
 </div>
 
-</footer>
+</nav>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/PHP/install-LAMP-on-Linux-Mint-17-2/" title="在Linux Mint17.2上安装LAMP" itemprop="url">在Linux Mint17.2上安装LAMP</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="shidenggui" target="_blank" itemprop="author">shidenggui</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-25T11:02:53.000Z" itemprop="datePublished"> 發表於 2015-08-25</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="更新系统">更新系统</h3><p><code>sudo apt-get update</code></p>
-<h3 id="安装apache2">安装apache2</h3><p><code>sudo apt-get install apache2</code></p>
-<h3 id="安装mysql">安装mysql</h3><p><code>sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql</code></p>
-<p>激活mysql<br><code>sudo mysql_install_db</code></p>
-<p><strong>可选:</strong>运行安全脚本(进行安全设置）<br><code>sudo /usr/bin/mysql_secure_installation</code></p>
-<h3 id="安装php">安装php</h3><p><code>sudo apt-get install  php5 libapache2-mod-php5</code></p>
-<h3 id="安装php相关模块">安装php相关模块</h3><p>查看所有可用模块<br><code>sudo apt-cache search php5-</code></p>
-<p>安装指定模块<br><code>sudo apt-get install php5-模块名</code></p>
-<h3 id="检验成果">检验成果</h3><p><code>sudo vim /var/www/html/index.php</code><br>写入：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line">phpinfo();</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>重启apache2使改动生效<br><code>sudo /etc/init.d/apache2 restart</code> 或 <code>sudo service apache2 restart</code><br>访问<code>localhost</code>查看效果</p>
-<p>参考：<a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu" target="_blank" rel="external">https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/PHP/">PHP</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Linux/">Linux</a><a href="/tags/PHP/">PHP</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
 	
-</div>
 
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/other#uncategorized/hello-world/" title="Hello World" itemprop="url">Hello World</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="shidenggui" target="_blank" itemprop="author">shidenggui</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-15T00:46:03.000Z" itemprop="datePublished"> 發表於 2015-08-15</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目錄</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#读《JavaScriptDOM编程艺术》的笔记"><span class="toc-number">1.</span> <span class="toc-text">读《JavaScriptDOM编程艺术》的笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域"><span class="toc-number">1.1.</span> <span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用new创建新对象"><span class="toc-number">1.2.</span> <span class="toc-text">使用new创建新对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#宿主对象"><span class="toc-number">1.3.</span> <span class="toc-text">宿主对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#节点"><span class="toc-number">1.4.</span> <span class="toc-text">节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取元素"><span class="toc-number">1.5.</span> <span class="toc-text">获取元素</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获得和设置属性"><span class="toc-number">2.</span> <span class="toc-text">获得和设置属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#getAttribute"><span class="toc-number">2.1.</span> <span class="toc-text">getAttribute</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#setAttribute"><span class="toc-number">2.2.</span> <span class="toc-text">setAttribute</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#非_DOM_解决方案(不推荐)"><span class="toc-number">2.3.</span> <span class="toc-text">非 DOM 解决方案(不推荐)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DOM_工作模式"><span class="toc-number">2.4.</span> <span class="toc-text">DOM 工作模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件处理函数"><span class="toc-number">2.5.</span> <span class="toc-text">事件处理函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#childNodes_属性"><span class="toc-number">2.6.</span> <span class="toc-text">childNodes 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nodeType_属性"><span class="toc-number">2.7.</span> <span class="toc-text">nodeType 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nodeValue"><span class="toc-number">2.8.</span> <span class="toc-text">nodeValue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#firstChild/lastChild"><span class="toc-number">2.9.</span> <span class="toc-text">firstChild/lastChild</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#window-onload"><span class="toc-number">2.10.</span> <span class="toc-text">window.onload</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#window-open"><span class="toc-number">2.11.</span> <span class="toc-text">window.open</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#this"><span class="toc-number">2.12.</span> <span class="toc-text">this</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分离JS"><span class="toc-number">2.13.</span> <span class="toc-text">分离JS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象检测"><span class="toc-number">2.14.</span> <span class="toc-text">对象检测</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#onload_绑定多个函数"><span class="toc-number">2.14.1.</span> <span class="toc-text">onload 绑定多个函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML_DOM"><span class="toc-number">2.15.</span> <span class="toc-text">HTML DOM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#createElement"><span class="toc-number">2.16.</span> <span class="toc-text">createElement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#appendChild"><span class="toc-number">2.17.</span> <span class="toc-text">appendChild</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#createTextNode"><span class="toc-number">2.18.</span> <span class="toc-text">createTextNode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在已有元素前插入一个新元素"><span class="toc-number">2.19.</span> <span class="toc-text">在已有元素前插入一个新元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ajax"><span class="toc-number">2.20.</span> <span class="toc-text">Ajax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XMLHttpRequest_对象"><span class="toc-number">2.21.</span> <span class="toc-text">XMLHttpRequest 对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#open()_方法"><span class="toc-number">2.22.</span> <span class="toc-text">open() 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#responseText_/_responseXML_属性"><span class="toc-number">2.23.</span> <span class="toc-text">responseText / responseXML 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#onreadystatechange_事件处理函数"><span class="toc-number">2.24.</span> <span class="toc-text">onreadystatechange 事件处理函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#readyState_属性"><span class="toc-number">2.25.</span> <span class="toc-text">readyState 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#abbr"><span class="toc-number">2.26.</span> <span class="toc-text">abbr</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS_DOM"><span class="toc-number">3.</span> <span class="toc-text">CSS DOM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#style_属性"><span class="toc-number">3.1.</span> <span class="toc-text">style 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#className_属性"><span class="toc-number">3.2.</span> <span class="toc-text">className 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#setTimeout"><span class="toc-number">3.3.</span> <span class="toc-text">setTimeout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#parseInt_/_parseFloat_函数"><span class="toc-number">3.4.</span> <span class="toc-text">parseInt / parseFloat 函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS_overflow"><span class="toc-number">3.5.</span> <span class="toc-text">CSS overflow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#onmouseover_方法"><span class="toc-number">3.6.</span> <span class="toc-text">onmouseover 方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery"><span class="toc-number">4.</span> <span class="toc-text">jQuery</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#each"><span class="toc-number">4.1.</span> <span class="toc-text">each</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#$_专有选择器"><span class="toc-number">4.2.</span> <span class="toc-text">$ 专有选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改元素"><span class="toc-number">4.3.</span> <span class="toc-text">修改元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#表单元素选择器"><span class="toc-number">4.4.</span> <span class="toc-text">表单元素选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义选择器过滤器"><span class="toc-number">4.5.</span> <span class="toc-text">自定义选择器过滤器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成内容"><span class="toc-number">4.6.</span> <span class="toc-text">生成内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#操作内容"><span class="toc-number">4.7.</span> <span class="toc-text">操作内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#document-ready"><span class="toc-number">4.8.</span> <span class="toc-text">document.ready</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他事件"><span class="toc-number">4.9.</span> <span class="toc-text">其他事件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery_and_Ajax"><span class="toc-number">4.10.</span> <span class="toc-text">jQuery and Ajax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#$(exp)-load()"><span class="toc-number">4.11.</span> <span class="toc-text">$(exp).load()</span></a></li></ol></li></ol>
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
@@ -934,12 +563,89 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
 
 
 
@@ -1000,4 +706,4 @@ $(document).ready(function(){
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
